@@ -189,6 +189,12 @@ def jscript(id_, obj, typ='application/json'):
 
 
 # ───────────────────────── 챕터 페이지 ─────────────────────────
+LEVEL = {1: 1, 2: 1, 3: 1, 4: 1, 5: 2, 6: 2, 7: 2, 8: 3, 9: 3, 10: 2, 11: 3, 12: 3, 13: 3, 14: 3, 15: 2}
+MINUTES = {1: 25, 2: 20, 3: 25, 4: 25, 5: 25, 6: 25, 7: 25, 8: 30, 9: 30, 10: 25, 11: 30, 12: 30, 13: 30, 14: 30, 15: 25}
+STARS = {1: '★☆☆ (입문)', 2: '★★☆ (보통)', 3: '★★★ (도전)'}
+HARD = {(8, 3), (9, 3), (11, 3), (12, 3), (13, 3)}
+
+
 def chapter(ch, prevc, nextc):
     global GLOSS
     GLOSS = dict(ch.get('gloss', {}))
@@ -209,7 +215,7 @@ def chapter(ch, prevc, nextc):
     # 히어로
     kp = ''.join('<div class="kpi %s"><b>%s</b><span>%s</span></div>' % (c, esc(v), rich(t)) for c, v, t in ch['kpis'])
     o.append(f'''<header class="hero"><div class="wrap">
-<div class="kicker">{esc(ch['pillar_name'])} · {n:02d}장 · 오늘의 수업: {esc(ch['format'][0])}</div>
+<div class="kicker">{esc(ch['pillar_name'])} · {n:02d}장 · 오늘의 수업: {esc(ch['format'][0])} · 난이도 {STARS[LEVEL.get(n, 2)]} · 약 {MINUTES.get(n, 25)}분</div>
 <h1>{esc(ch['title'])}</h1>
 <p class="q">핵심 질문 — {esc(ch['q'])}</p>
 <p>{rich(ch['intro'])}</p>
@@ -310,6 +316,8 @@ def stage_html(ch, i, st):
     o = ['<section class="level" id="lv%d"><div class="wrap">' % i]
     tags = ''.join('<span class="tag %s">%s</span>' % (('fly' if t.startswith('일상') else 'nn'), esc(t)) for t in st['tags'])
     o.append('<div class="lvhead"><div class="hex" aria-hidden="true">%d</div><div><h2>%d단계 · %s</h2>%s</div></div>' % (i, i, esc(st['title']), tags))
+    if (ch['no'], i) in HARD:
+        o.append('<div class="rest"><b>도전 단계</b> — 이 장에서 가장 어려운 단계예요. 처음 읽을 때는 그림 실험과 「박사의 해석」만 보고 넘어가도 다음 장을 읽는 데 문제없어요.</div>')
     o.append(say('doc', 'board', '<b>상황 질문</b> — ' + st['situ']))
     if st.get('recap'):
         o.append('<div class="recap"><b>30초 복습 — %s</b><br>%s</div>' % (esc(st['recap'][0]), rich(st['recap'][1])))

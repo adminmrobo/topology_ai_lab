@@ -55,7 +55,7 @@ def build(B, chs):
         ['기둥 3 · 끝에서 보는 법', '<p>번역기 같은 함자(12), 무한 끝에 점을 붙이는 울트라필터와 스톤-체흐(13), 아주 끊긴 공간과 2진 정수(14)를 배우고, 15장에서 종합 쪽지시험을 봐요.</p>']]}, ensure_ascii=False)) + '''"></div></div>
 </div></section>''')
     cards = ''.join('<a href="%s.html"><span class="n">%02d · %s</span><b>%s</b><span>%s</span><span class="fmt">%s</span></a>' % (
-        c['slug'], c['no'], ('기둥 %d' % c['pillar']) if c.get('pillar') else '종합', esc(c['title']), esc(c['q']), esc(c['format'][0])) for c in chs)
+        c['slug'], c['no'], (('기둥 %d' % c['pillar']) if c.get('pillar') else '종합') + ' · ' + B.STARS[B.LEVEL[c['no']]].split(' ')[0] + ' · 약 %d분' % B.MINUTES[c['no']], esc(c['title']), esc(c['q']), esc(c['format'][0])) for c in chs)
     cards += '<a href="practice/index.html"><span class="n">마지막 장</span><b>실전 연습장 — 위상수학 사업장 시뮬레이터</b><span>픽셀 사진관, 타일 공장, 빙글빙글 주차장, 우산 대여점을 직접 운영해 보며 배운 것을 써 봐요.</span><span class="fmt">시뮬레이터</span></a>'
     o.append(f'<section class="level" id="toc"><div class="wrap"><h2>목차 — 15장 + 실전 연습장</h2><div class="toc">{cards}</div></div></section>')
     rows = ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(k), esc(v), ', '.join('%02d' % c['no'] for c in chs if c['format'][0].startswith(k.split(' ')[0]))) for k, v in FORMAT_NOTE.items())
