@@ -3,7 +3,7 @@
  "title_ko": "위상수학 교실",
  "site_title": "위상수학 교실 · 중학생도 따라오는 위상수학 15장 + 실전 연습장",
  "site_url": "https://adminmrobo.github.io/topology_ai_lab/",
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "ontology": {
   "pages": [
    {
@@ -108,7 +108,7 @@
    "id": "cover_00",
    "role": "cover",
    "path": "index.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -116,13 +116,22 @@
     "jupanbot",
     "moa"
    ],
-   "note": "대체 표지(CSS·캔버스) 사용 중, docs/IMG_specs.md cover_00"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_00.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "cover_01",
    "role": "cover",
    "path": "01_open_sets.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -130,7 +139,16 @@
     "jupanbot",
     "asst"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_01.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_01",
@@ -141,13 +159,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_01"
+   "source_of": "cover_01",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_02",
    "role": "cover",
    "path": "02_discrete_indiscrete.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -155,7 +174,16 @@
     "jupanbot",
     "sia"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_02.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_02",
@@ -166,13 +194,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_02"
+   "source_of": "cover_02",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_03",
    "role": "cover",
    "path": "03_connectedness.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -180,7 +209,16 @@
     "jupanbot",
     "x1"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_03.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_03",
@@ -191,13 +229,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_03"
+   "source_of": "cover_03",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_04",
    "role": "cover",
    "path": "04_compactness.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -205,7 +244,16 @@
     "jupanbot",
     "robo"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_04.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_04",
@@ -216,13 +264,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_04"
+   "source_of": "cover_04",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_05",
    "role": "cover",
    "path": "05_digital_topology.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -230,7 +279,16 @@
     "jupanbot",
     "moa"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_05.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_05",
@@ -241,13 +299,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_05"
+   "source_of": "cover_05",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_06",
    "role": "cover",
    "path": "06_alexandroff_posets.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -255,7 +314,16 @@
     "jupanbot",
     "moa"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_06.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_06",
@@ -266,13 +334,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_06"
+   "source_of": "cover_06",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_07",
    "role": "cover",
    "path": "07_group_actions.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -280,7 +349,16 @@
     "jupanbot",
     "x2"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_07.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_07",
@@ -291,13 +369,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_07"
+   "source_of": "cover_07",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_08",
    "role": "cover",
    "path": "08_proper_actions.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -305,7 +384,16 @@
     "jupanbot",
     "x1"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_08.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_08",
@@ -316,13 +404,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_08"
+   "source_of": "cover_08",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_09",
    "role": "cover",
    "path": "09_tiles_lattices.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -330,7 +419,16 @@
     "jupanbot",
     "sia"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_09.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_09",
@@ -341,13 +439,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_09"
+   "source_of": "cover_09",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_10",
    "role": "cover",
    "path": "10_covering_spaces.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -355,7 +454,16 @@
     "jupanbot",
     "sia"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_10.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_10",
@@ -366,13 +474,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_10"
+   "source_of": "cover_10",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_11",
    "role": "cover",
    "path": "11_galois_correspondence.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -380,7 +489,16 @@
     "jupanbot",
     "x3"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_11.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_11",
@@ -391,13 +509,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_11"
+   "source_of": "cover_11",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_12",
    "role": "cover",
    "path": "12_functors_adjunction.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -405,7 +524,16 @@
     "jupanbot",
     "x2"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_12.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_12",
@@ -416,13 +544,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_12"
+   "source_of": "cover_12",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_13",
    "role": "cover",
    "path": "13_ultrafilters_stone_cech.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -430,7 +559,16 @@
     "jupanbot",
     "moa"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_13.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_13",
@@ -441,13 +579,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_13"
+   "source_of": "cover_13",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_14",
    "role": "cover",
    "path": "14_extremal_profinite.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -455,7 +594,16 @@
     "jupanbot",
     "asst"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_14.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_14",
@@ -466,13 +614,14 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_14"
+   "source_of": "cover_14",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "cover_15",
    "role": "cover",
    "path": "15_final_review.html#top",
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
    "characters": [
     "doc",
@@ -480,7 +629,16 @@
     "jupanbot",
     "sia"
    ],
-   "note": "대체 표지 사용 중"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "file": "img/cover/cover_15.webp",
+   "size": [
+    1920,
+    1080
+   ],
+   "grid": [
+    480,
+    270
+   ]
   },
   {
    "id": "og_15",
@@ -491,7 +649,8 @@
     630
    ],
    "status": "ok",
-   "source_of": "cover_15"
+   "source_of": "cover_15",
+   "note": "표지 픽셀아트에서 4px 격자에 맞춰 잘라 냄"
   },
   {
    "id": "src01",
@@ -721,9 +880,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_01_lv2",
@@ -733,9 +896,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_02_lv1",
@@ -745,9 +912,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_02_lv2",
@@ -757,9 +928,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_03_lv1",
@@ -769,9 +944,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_03_lv2",
@@ -781,9 +960,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_04_lv1",
@@ -793,9 +976,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_04_lv2",
@@ -805,9 +992,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_05_lv1",
@@ -817,9 +1008,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_05_lv2",
@@ -829,9 +1024,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_06_lv1",
@@ -841,9 +1040,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_06_lv2",
@@ -853,9 +1056,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_07_lv1",
@@ -865,9 +1072,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_07_lv2",
@@ -877,9 +1088,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_08_lv1",
@@ -889,9 +1104,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_08_lv2",
@@ -901,9 +1120,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_09_lv1",
@@ -913,9 +1136,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_09_lv2",
@@ -925,9 +1152,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_10_lv1",
@@ -937,9 +1168,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_10_lv2",
@@ -949,9 +1184,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_11_lv1",
@@ -961,9 +1200,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_11_lv2",
@@ -973,9 +1216,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_12_lv1",
@@ -985,9 +1232,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_12_lv2",
@@ -997,9 +1248,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_13_lv1",
@@ -1009,9 +1264,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_13_lv2",
@@ -1021,9 +1280,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_14_lv1",
@@ -1033,9 +1296,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_14_lv2",
@@ -1045,9 +1312,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_15_lv1",
@@ -1057,9 +1328,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   },
   {
    "id": "scene_15_lv2",
@@ -1069,9 +1344,13 @@
     1200,
     800
    ],
-   "status": "missing",
+   "status": "ok",
    "robot": "jupanbot-v2",
-   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+   "note": "Genspark 16비트 RPG 픽셀아트, 4배 NEAREST, 무손실 WebP",
+   "grid": [
+    300,
+    200
+   ]
   }
  ]
 }

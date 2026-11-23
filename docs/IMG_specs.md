@@ -1,5 +1,7 @@
 # 위상수학 교실 — 이미지 제작 명세서 (IMG_00 시리즈 공용 + 장별 표지)
 
+> **상태 (2026-11-24): 47장 모두 반영 완료** — 표지 17장 `img/cover/`, 장면 30장 `img/scene/` (4배 NEAREST, 무손실 WebP). 아래 지시문은 다시 그릴 때 쓰는 원본이에요.
+
 > 그림체: **16비트 RPG 픽셀아트**(SNES 시대 느낌), **흰 배경(#ffffff) 위 낮의 연구실**. 그림 안에 글자·숫자·기호를 넣지 않는다(글자는 HTML로). 캐릭터 외형은 캐릭터 팩 `CHAR_lab4` 설정샷(k02~k04, 주판봇 v2 기본 표정 9종)을 따른다. 키 비율: 박사 1.00 · 조수 하루 0.90 · 시아 0.88 · 미공개 X1 0.85 · 모아 0.84 · 주판봇 0.72 · X3 0.60 · X2 0.95 · 초파리 0.41.
 
 ## 1. 공용 규칙
@@ -14,23 +16,23 @@
 
 | 키 | 페이지 | 상태 | 등장 |
 |---|---|---|---|
-| cover_00 | index.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 모아 + 수강생 실루엣 |
-| cover_01 | 01_open_sets.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 조수 하루 |
-| cover_02 | 02_discrete_indiscrete.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 인턴 시아 |
-| cover_03 | 03_connectedness.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 미공개 X1 |
-| cover_04 | 04_compactness.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 주판봇 |
-| cover_05 | 05_digital_topology.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 인턴 모아 |
-| cover_06 | 06_alexandroff_posets.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 인턴 모아 |
-| cover_07 | 07_group_actions.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 미공개 X2 |
-| cover_08 | 08_proper_actions.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 미공개 X1 |
-| cover_09 | 09_tiles_lattices.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 인턴 시아 |
-| cover_10 | 10_covering_spaces.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 인턴 시아 |
-| cover_11 | 11_galois_correspondence.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 미공개 X3 |
-| cover_12 | 12_functors_adjunction.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 미공개 X2 |
-| cover_13 | 13_ultrafilters_stone_cech.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 인턴 모아 |
-| cover_14 | 14_extremal_profinite.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 조수 하루 |
-| cover_15 | 15_final_review.html | 새로 그림 (지금은 대체 표지) | 박사, 초파리, 주판봇, 인턴 시아 |
-| cover_practice | practice/index.html | 새로 그림 | 네 사업장 간판 앞의 박사와 수강생 6명 |
+| cover_00 | index.html | 반영 완료 | 박사, 초파리, 주판봇, 모아 + 수강생 실루엣 |
+| cover_01 | 01_open_sets.html | 반영 완료 | 박사, 초파리, 주판봇, 조수 하루 |
+| cover_02 | 02_discrete_indiscrete.html | 반영 완료 | 박사, 초파리, 주판봇, 인턴 시아 |
+| cover_03 | 03_connectedness.html | 반영 완료 | 박사, 초파리, 주판봇, 미공개 X1 |
+| cover_04 | 04_compactness.html | 반영 완료 | 박사, 초파리, 주판봇, 주판봇 |
+| cover_05 | 05_digital_topology.html | 반영 완료 | 박사, 초파리, 주판봇, 인턴 모아 |
+| cover_06 | 06_alexandroff_posets.html | 반영 완료 | 박사, 초파리, 주판봇, 인턴 모아 |
+| cover_07 | 07_group_actions.html | 반영 완료 | 박사, 초파리, 주판봇, 미공개 X2 |
+| cover_08 | 08_proper_actions.html | 반영 완료 | 박사, 초파리, 주판봇, 미공개 X1 |
+| cover_09 | 09_tiles_lattices.html | 반영 완료 | 박사, 초파리, 주판봇, 인턴 시아 |
+| cover_10 | 10_covering_spaces.html | 반영 완료 | 박사, 초파리, 주판봇, 인턴 시아 |
+| cover_11 | 11_galois_correspondence.html | 반영 완료 | 박사, 초파리, 주판봇, 미공개 X3 |
+| cover_12 | 12_functors_adjunction.html | 반영 완료 | 박사, 초파리, 주판봇, 미공개 X2 |
+| cover_13 | 13_ultrafilters_stone_cech.html | 반영 완료 | 박사, 초파리, 주판봇, 인턴 모아 |
+| cover_14 | 14_extremal_profinite.html | 반영 완료 | 박사, 초파리, 주판봇, 조수 하루 |
+| cover_15 | 15_final_review.html | 반영 완료 | 박사, 초파리, 주판봇, 인턴 시아 |
+| cover_practice | practice/index.html | 반영 완료 | 네 사업장 간판 앞의 박사와 수강생 6명 |
 | 캐릭터 얼굴 | 모든 페이지 | 캐릭터 팩 재사용 (`assets/sprites.js`, 96px) | — |
 
 ## 3. 표지 지시문 (Genspark 등 이미지 생성 도구용)

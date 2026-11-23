@@ -20,10 +20,7 @@ def build(B, chs):
                '이산 위상': '모든 부분집합이 열린 집합인 위상. 점마다 혼자 떨어져 있다.'}
     o = [B.head(B.SERIES + ' · 오리엔테이션', '중학생도 따라오는 위상수학 15장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.')]
     o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">위상수학 교실</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">세 기둥</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
-    chars = ''.join(img(w, m, cls='') for w, m in [('doc', 'front'), ('fly', 'magnify'), ('robo', 'smile'), ('moa', 'cheer')])
-    o.append(f'''<div class="cover" id="top" role="img" aria-label="위상수학 교실 표지 — 박사, 초파리 연구원, 주판봇, 인턴 모아">
-<canvas class="bgpx" data-seed="3" data-motif="0" aria-hidden="true"></canvas><span class="badge">대체 표지 · 그림 대기 (IMG 명세서 cover_00)</span>
-<div class="ctext"><span class="no">오리엔테이션 · 00</span><h1>위상수학 교실</h1><p>고무찰흙 세상의 수학 — 15장 + 실전 연습장</p></div><div class="cchars">{chars}</div></div>''')
+    o.append(B.cover_html('cover_00', '위상수학 교실', '오리엔테이션 · 00', '고무찰흙 세상의 수학 — 15장 + 실전 연습장', '위상수학 교실 표지 — 박사, 조교 둘, 수강생 여섯이 도넛과 머그컵 그림 앞에 모인 강의실'))
     o.append('''<header class="hero"><div class="wrap"><div class="kicker">연구실 해설 시리즈 · 위상수학 입문</div><h1>위상수학 교실 — 고무찰흙 세상의 수학</h1>
 <p class="q">핵심 질문 — 늘이고 구부려도 변하지 않는 「모양의 본질」은 무엇일까?</p>
 <p>도넛과 손잡이 달린 컵은 [[위상수학]]의 눈으로 보면 같은 모양이에요. 둘 다 구멍이 하나니까요. 이 시리즈는 인포그래픽 20장에 담긴 위상수학의 개념을 15장으로 나눠, 그림을 직접 움직이며 배우게 만든 수업입니다.</p>

@@ -244,3 +244,14 @@ footer .nextprev a{background:var(--panel);border:1px solid var(--rule);border-r
 .frow > i{align-self:center;font-style:normal;color:var(--accent);font-weight:700}
 @media (max-width:760px){.frow{flex-direction:column}.frow > i{transform:rotate(90deg);align-self:center}}
 @media (max-width:760px){.frow > div{flex:none}}
+/* 픽셀아트 표지 · 장면 그림 */
+.cover.has-img{background:#fff}
+.cover.has-img .cimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover.has-img .ctext{right:4%;width:42%}
+.cover.has-img .ctext h1{text-shadow:none}
+img.scene{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--rule);margin:8px 0 6px;background:#fff}
+@media (max-width:620px){
+ .cover.has-img{aspect-ratio:auto;min-height:0}
+ .cover.has-img .cimg{position:static;display:block;height:auto;aspect-ratio:10/9;object-fit:cover;object-position:left center}
+ .cover.has-img .ctext{position:static;width:auto;padding:14px 18px 18px}
+}

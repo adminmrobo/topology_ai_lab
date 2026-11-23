@@ -191,7 +191,7 @@ def jscript(id_, obj, typ='application/json'):
 # ───────────────────────── 챕터 페이지 ─────────────────────────
 LEVEL = {1: 1, 2: 1, 3: 1, 4: 1, 5: 2, 6: 2, 7: 2, 8: 3, 9: 3, 10: 2, 11: 3, 12: 3, 13: 3, 14: 3, 15: 2}
 MINUTES = {1: 25, 2: 20, 3: 25, 4: 25, 5: 25, 6: 20, 7: 25, 8: 20, 9: 20, 10: 25, 11: 20, 12: 20, 13: 20, 14: 30, 15: 25}
-STARS = {1: '★☆☆ (입문)', 2: '★★☆ (보통)', 3: '★★★ (도전)'}
+STARS = {1: '입문 ●○○', 2: '보통 ●●○', 3: '도전 ●●●'}
 DEEP = {(6, 3), (8, 3), (9, 3), (11, 3), (12, 3), (13, 3)}
 BASIC = [1, 2, 3, 4, 5, 6, 7, 10, 15]
 from nicks import NICK
@@ -212,11 +212,7 @@ def chapter(ch, prevc, nextc):
     cc = ['doc', 'fly', 'robo', ch['star'][0]]
     cm = ['front', 'magnify', 'smile', ch['star'][1]]
     chars = ''.join(img(w, m, cls='', extra=(' class="flipx"' if False else '')) for w, m in zip(cc, cm))
-    o.append(f'''<div class="cover" id="top" role="img" aria-label="{esc(ch['title'])} 표지 — 박사, 초파리 연구원, 주판봇, {PEOPLE[ch['star'][0]][0]}">
-<canvas class="bgpx" data-seed="{n*7+3}" data-motif="{n}" aria-hidden="true"></canvas>
-<span class="badge">대체 표지 · 그림 대기 (IMG 명세서 cover_{n:02d})</span>
-<div class="ctext"><span class="no">{ch['pillar_name']} · {n:02d}장</span><h1>{esc(ch['title'])}</h1><p>{esc(ch['sub'])}</p></div>
-<div class="cchars">{chars}</div></div>''')
+    o.append(cover_html('cover_%02d' % n, ch['title'], '%s · %02d장' % (ch['pillar_name'], n), ch['sub'], '%s 표지 — 박사, 초파리 연구원, 주판봇, %s' % (ch['title'], PEOPLE[ch['star'][0]][0])))
     # 히어로
     kp = ''.join('<div class="kpi %s"><b>%s</b><span>%s</span></div>' % (c, esc(v), rich(t)) for c, v, t in ch['kpis'])
     o.append(f'''<header class="hero"><div class="wrap">
@@ -355,6 +351,11 @@ def flow_html(ch, prevc, nextc):
             '<figcaption>%s</figcaption></figure>') % (esc(ch['title'].split(' — ')[0]), arrow.join([pv] + items + [nx]), rich(ch['stages'][-1]['interp'] if not (ch['no'], len(ch['stages'])) in DEEP else ch['stages'][0]['interp']))
 
 
+def cover_html(key, title, label, subt, alt, up=''):
+    return (f'<div class="cover has-img" id="top"><img class="cimg" src="{up}img/cover/{key}.webp" width="1920" height="1080" alt="{esc(alt)}">'
+            f'<div class="ctext"><span class="no">{esc(label)}</span><h1>{esc(title)}</h1><p>{esc(subt)}</p></div></div>')
+
+
 def nick_html(n):
     rows = NICK.get(n, [])
     if not rows:
@@ -386,7 +387,9 @@ def stage_html(ch, i, st):
                          say('asst', 'spark', f['comment'], name='조수 하루 (수강생)')))
         o.append('</div>')
     p = st['pair']
-    o.append('<div class="pair"><div><span class="tag fly">일상으로 치면</span><p>%s</p></div><div><span class="tag nn">위상수학에서는</span><p>%s</p></div></div>' % (rich(p[0]), rich(p[1])))
+    scn = 'img/scene/scene_%02d_lv%d.webp' % (ch['no'], i)
+    simg = ('<img class="scene" loading="lazy" src="%s" width="1200" height="800" alt="%s 장면 그림">' % (scn, esc(p[2] if len(p) > 2 else '일상 비유'))) if os.path.exists(os.path.join(ROOT, scn)) else ''
+    o.append('<div class="pair"><div><span class="tag fly">일상으로 치면</span>' + simg + '<p>%s</p></div><div><span class="tag nn">위상수학에서는</span><p>%s</p></div></div>' % (rich(p[0]), rich(p[1])))
     o.append('<div class="talk">%s</div>' % says(st['talk']))
     o.append('<div class="panel"><div class="ptitle">%s</div><div data-w="%s" data-o="%s"></div></div>' % (
         esc(st['panel']), st['w'], esc(json.dumps(st.get('o', {}), ensure_ascii=False))))

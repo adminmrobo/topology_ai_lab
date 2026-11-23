@@ -6,6 +6,7 @@ def build(B, chs):
     B.USED.update({('doc', 'judge'), ('doc', 'think'), ('asst', 'report'), ('fly', 'magnify'), ('robo', 'calc')})
     o = [B.head('마지막 장 · 실전 연습장 — ' + B.SERIES, '픽셀 사진관, 타일 공장, 빙글빙글 주차장, 우산 대여점을 운영하며 위상수학 개념을 써 보는 시뮬레이터.', depth=1, og='../img/og/og_practice.webp')]
     o.append('<nav class="top" aria-label="실전 연습장 목차"><a class="logo" href="../index.html">위상수학 교실</a><a href="#sim">사업장</a><a href="#wrap">마무리</a><a href="../15_final_review.html">15장 종합</a></nav><div id="prog"></div>')
+    o.append(B.cover_html('cover_practice', '위상수학 사업장 시뮬레이터', '마지막 장 · 실전 연습장', '픽셀 사진관 · 타일 공장 · 빙글빙글 주차장 · 우산 대여점', '실전 연습장 표지 — 네 사업장 앞의 박사와 수강생들', up='../'))
     o.append('<header class="hero"><div class="wrap"><div class="kicker">마지막 장 · 실전 연습장</div><h1>위상수학 사업장 시뮬레이터</h1>'
              '<p class="q">핵심 질문 — 배운 개념으로 「가상 사업장」의 결정을 내리면, 숫자가 어떻게 달라질까?</p>'
              '<p>사업장 네 곳을 탭으로 골라 운영해 보세요. 초록 상자는 시장 환경(내가 못 바꾸는 조건), 파란 상자는 내 결정이에요. 성적표·그래프·캐릭터 대사가 바로 바뀌고, 미션 3개는 조작한 뒤에 자동으로 판정돼요. 주소 끝에 #pixel, #tile, #park, #umb를 붙이면 그 사업장이 바로 열려요.</p>'
