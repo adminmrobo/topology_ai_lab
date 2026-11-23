@@ -19,7 +19,7 @@ def build(B, chs):
     B.GLOSS = {'위상수학': '길이·각도는 잊고 「붙어 있음과 떨어져 있음」만으로 모양을 연구하는 수학. 고무찰흙 기하학이라고도 한다.',
                '이산 위상': '모든 부분집합이 열린 집합인 위상. 점마다 혼자 떨어져 있다.'}
     o = [B.head(B.SERIES + ' · 오리엔테이션', '중학생도 따라오는 위상수학 15장 + 실전 연습장. 박사 선생님과 두 조교, 수강생 6명이 함께하는 연구실 해설 시리즈.')]
-    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">위상수학 교실</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">세 기둥</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
+    o.append('<nav class="top" aria-label="목차"><a class="logo" href="index.html">위상수학 교실</a><a href="#three">3줄 요약</a><a href="#cast">등장인물</a><a href="#pillars">세 기둥</a><a href="#tracks">과정</a><a href="#toc">목차</a><a href="#how">수업 방식</a><a href="practice/index.html">실전 연습장</a></nav><div id="prog"></div>')
     chars = ''.join(img(w, m, cls='') for w, m in [('doc', 'front'), ('fly', 'magnify'), ('robo', 'smile'), ('moa', 'cheer')])
     o.append(f'''<div class="cover" id="top" role="img" aria-label="위상수학 교실 표지 — 박사, 초파리 연구원, 주판봇, 인턴 모아">
 <canvas class="bgpx" data-seed="3" data-motif="0" aria-hidden="true"></canvas><span class="badge">대체 표지 · 그림 대기 (IMG 명세서 cover_00)</span>
@@ -55,8 +55,14 @@ def build(B, chs):
         ['기둥 3 · 끝에서 보는 법', '<p>번역기 같은 함자(12), 무한 끝에 점을 붙이는 울트라필터와 스톤-체흐(13), 아주 끊긴 공간과 2진 정수(14)를 배우고, 15장에서 종합 쪽지시험을 봐요.</p>']]}, ensure_ascii=False)) + '''"></div></div>
 </div></section>''')
     cards = ''.join('<a href="%s.html"><span class="n">%02d · %s</span><b>%s</b><span>%s</span><span class="fmt">%s</span></a>' % (
-        c['slug'], c['no'], (('기둥 %d' % c['pillar']) if c.get('pillar') else '종합') + ' · ' + B.STARS[B.LEVEL[c['no']]].split(' ')[0] + ' · 약 %d분' % B.MINUTES[c['no']], esc(c['title']), esc(c['q']), esc(c['format'][0])) for c in chs)
+        c['slug'], c['no'], (('기둥 %d' % c['pillar']) if c.get('pillar') else '종합') + ' · ' + B.STARS[B.LEVEL[c['no']]].split(' ')[0] + ' · 약 %d분' % B.MINUTES[c['no']] + (' <span class="track basic">기본</span>' if c['no'] in B.BASIC else ' <span class="track adv">심화</span>'), esc(c['title']), esc(c['q']), esc(c['format'][0])) for c in chs)
     cards += '<a href="practice/index.html"><span class="n">마지막 장</span><b>실전 연습장 — 위상수학 사업장 시뮬레이터</b><span>픽셀 사진관, 타일 공장, 빙글빙글 주차장, 우산 대여점을 직접 운영해 보며 배운 것을 써 봐요.</span><span class="fmt">시뮬레이터</span></a>'
+    bas = ' → '.join('<a href="%s.html">%02d</a>' % (c['slug'], c['no']) for c in chs if c['no'] in B.BASIC) + ' → <a href="practice/index.html">실전 연습장</a>'
+    adv = ', '.join('<a href="%s.html">%02d %s</a>' % (c['slug'], c['no'], esc(c['title'].split(' — ')[0])) for c in chs if c['no'] not in B.BASIC)
+    o.append(f'''<section class="level" id="tracks"><div class="wrap"><h2>두 갈래 과정 — 어디까지 읽을까</h2>
+<div class="steps"><div><b class="n">1</b><b>기본 과정 <span class="track basic">기본</span></b><p>처음 오신 분은 이 순서만 따라가도 실전 연습장까지 갈 수 있어요.</p><p>{bas}</p></div>
+<div><b class="n">2</b><b>심화 과정 <span class="track adv">심화</span></b><p>기본 과정을 마친 뒤 도전하세요. 대학 이상에서 배우는 내용을 그림으로 맛보는 장이에요.</p><p>{adv}</p></div>
+<div><b class="n">3</b><b>심화 단계 접기</b><p>어려운 장의 마지막 단계는 「심화」로 접어 두었어요. 펼치지 않아도 다음 장을 읽을 수 있어요. 장마다 「용어 별명 카드」로 어려운 이름을 먼저 익히세요.</p></div></div></div></section>''')
     o.append(f'<section class="level" id="toc"><div class="wrap"><h2>목차 — 15장 + 실전 연습장</h2><div class="toc">{cards}</div></div></section>')
     rows = ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(k), esc(v), ', '.join('%02d' % c['no'] for c in chs if c['format'][0].startswith(k.split(' ')[0]))) for k, v in FORMAT_NOTE.items())
     o.append(f'''<section class="level" id="how"><div class="wrap"><h2>수업 방식 — 장마다 다른 수업</h2>

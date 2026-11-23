@@ -190,9 +190,11 @@ def jscript(id_, obj, typ='application/json'):
 
 # ───────────────────────── 챕터 페이지 ─────────────────────────
 LEVEL = {1: 1, 2: 1, 3: 1, 4: 1, 5: 2, 6: 2, 7: 2, 8: 3, 9: 3, 10: 2, 11: 3, 12: 3, 13: 3, 14: 3, 15: 2}
-MINUTES = {1: 25, 2: 20, 3: 25, 4: 25, 5: 25, 6: 25, 7: 25, 8: 30, 9: 30, 10: 25, 11: 30, 12: 30, 13: 30, 14: 30, 15: 25}
+MINUTES = {1: 25, 2: 20, 3: 25, 4: 25, 5: 25, 6: 20, 7: 25, 8: 20, 9: 20, 10: 25, 11: 20, 12: 20, 13: 20, 14: 30, 15: 25}
 STARS = {1: '★☆☆ (입문)', 2: '★★☆ (보통)', 3: '★★★ (도전)'}
-HARD = {(8, 3), (9, 3), (11, 3), (12, 3), (13, 3)}
+DEEP = {(6, 3), (8, 3), (9, 3), (11, 3), (12, 3), (13, 3)}
+BASIC = [1, 2, 3, 4, 5, 6, 7, 10, 15]
+from nicks import NICK
 
 
 def chapter(ch, prevc, nextc):
@@ -200,7 +202,7 @@ def chapter(ch, prevc, nextc):
     GLOSS = dict(ch.get('gloss', {}))
     n = ch['no']
     stg = ch['stages']
-    navl = ''.join('<a href="#lv%d">%d단계</a>' % (i, i) for i in range(1, len(stg) + 1))
+    navl = ''.join('<a href="#lv%d">%d단계%s</a>' % (i, i, '·심화' if (ch['no'], i) in DEEP else '') for i in range(1, len(stg) + 1))
     o = [head('%02d %s — %s' % (n, ch['title'], SERIES), ch['q'], og='img/og/og_%02d.webp' % n)]
     o.append(f'<nav class="top" aria-label="이 페이지 목차"><a class="logo" href="index.html">위상수학 교실</a><a href="#three">3줄 요약</a><a href="#class">수업</a><a href="#map">큰 그림</a>{navl}<a href="#ai">AI 판단</a><a href="#duel">대결</a><a href="#sum">정리</a><a href="#kg">색인</a><a href="#export">꾸러미</a></nav><div id="prog"></div>')
     # 표지 (대체 표지)
@@ -215,7 +217,7 @@ def chapter(ch, prevc, nextc):
     # 히어로
     kp = ''.join('<div class="kpi %s"><b>%s</b><span>%s</span></div>' % (c, esc(v), rich(t)) for c, v, t in ch['kpis'])
     o.append(f'''<header class="hero"><div class="wrap">
-<div class="kicker">{esc(ch['pillar_name'])} · {n:02d}장 · 오늘의 수업: {esc(ch['format'][0])} · 난이도 {STARS[LEVEL.get(n, 2)]} · 약 {MINUTES.get(n, 25)}분</div>
+<div class="kicker">{esc(ch['pillar_name'])} · {n:02d}장 · 오늘의 수업: {esc(ch['format'][0])} · {'기본 과정' if n in BASIC else '심화 과정'} · 난이도 {STARS[LEVEL.get(n, 2)]} · 본편 약 {MINUTES.get(n, 25)}분{' + 심화 단계 약 10분' if (n, 3) in DEEP else ''}</div>
 <h1>{esc(ch['title'])}</h1>
 <p class="q">핵심 질문 — {esc(ch['q'])}</p>
 <p>{rich(ch['intro'])}</p>
@@ -237,6 +239,7 @@ def chapter(ch, prevc, nextc):
     prevlink = '<a href="%s">%s</a>' % (prevc[0], esc(prevc[1])) if prevc else '없음 (첫 장)'
     o.append(f'''<section class="level" id="cast"><div class="wrap"><h2>등장인물 — 선생님 1명, 조교 2명, 수강생 6명</h2>
 <div class="cast">{castl}</div>
+{nick_html(n)}
 <p class="note">이 페이지 사용법: 밑줄 친 말을 누르면 뜻이 나옵니다(Esc로 닫기). 단계마다 그림을 직접 움직여 보고, 끝의 확인 퀴즈로 점검하세요. 앞 장: {prevlink}</p>
 </div></section>''')
     # 수업 형식
@@ -261,7 +264,12 @@ def chapter(ch, prevc, nextc):
 {rc}<p>{rich(m[3])}</p></div></section>''')
     # 단계
     for i, st in enumerate(stg, 1):
-        o.append(stage_html(ch, i, st))
+        h = stage_html(ch, i, st)
+        if (ch['no'], i) in DEEP:
+            h = ('<div class="wrap"><details class="deepbox"><summary><b>%d단계 · 심화 — %s</b><br><span class="note">이 장에서 가장 어려운 단계예요. 접어 둔 채 넘어가도 다음 장과 조교 대결을 읽는 데 문제없어요. 궁금하면 펼쳐 보세요.</span></summary></div>' % (i, esc(st['title']))
+                 + h + '<div class="wrap"></details></div>')
+            h = h.replace('<div class="wrap"></details></div>', '</details></div>').replace('</summary></div>', '</summary>', 1)
+        o.append(h)
     # AI 판단 코너
     a = ch['ai']
     o.append(f'''<section class="level" id="ai"><div class="wrap"><div class="aic"><h3>AI 판단 코너 — AI가 낸 답, 그대로 믿어도 될까?</h3>
@@ -298,6 +306,11 @@ def chapter(ch, prevc, nextc):
     examples = ''.join('<li>%s</li>' % rich(x) for x in ch['examples'])
     extra = f'''<h3>출처</h3><div class="tw"><table class="tb"><thead><tr><th>자료</th><th>이 페이지에서 쓴 곳</th></tr></thead><tbody>{srcrows}</tbody></table></div>
 <h3>예시값·설명용 모형인 것</h3><ul>{examples}</ul>'''
+    if n in BASIC and n != 15:
+        nb = BASIC[BASIC.index(n) + 1]
+        nc = [c for c in ALL if c['no'] == nb][0]
+        if nextc and not nextc[0].startswith(nc['slug']):
+            extra += '<p class="rest"><b>기본 과정만 따라가는 중이라면</b> 다음은 <a href="%s.html">%02d %s</a>예요. (%02d~%02d장은 심화 과정)</p>' % (nc['slug'], nb, esc(nc['title']), n + 1, nb - 1)
     o.append(footer_html(prevc, nextc, extra))
     kg = build_kg(ch)
     meta = page_meta(ch)
@@ -312,12 +325,18 @@ def chapter(ch, prevc, nextc):
     return '\n'.join(o)
 
 
+def nick_html(n):
+    rows = NICK.get(n, [])
+    if not rows:
+        return ''
+    cards = ''.join('<div><span class="role">원래 이름: %s</span><b>%s</b><span>%s</span></div>' % (esc(a), esc(b), esc(c)) for a, b, c in rows)
+    return '<h3>용어 별명 카드 — 어려운 이름은 별명으로 기억하세요</h3><div class="nick">%s</div>' % cards
+
+
 def stage_html(ch, i, st):
     o = ['<section class="level" id="lv%d"><div class="wrap">' % i]
     tags = ''.join('<span class="tag %s">%s</span>' % (('fly' if t.startswith('일상') else 'nn'), esc(t)) for t in st['tags'])
     o.append('<div class="lvhead"><div class="hex" aria-hidden="true">%d</div><div><h2>%d단계 · %s</h2>%s</div></div>' % (i, i, esc(st['title']), tags))
-    if (ch['no'], i) in HARD:
-        o.append('<div class="rest"><b>도전 단계</b> — 이 장에서 가장 어려운 단계예요. 처음 읽을 때는 그림 실험과 「박사의 해석」만 보고 넘어가도 다음 장을 읽는 데 문제없어요.</div>')
     o.append(say('doc', 'board', '<b>상황 질문</b> — ' + st['situ']))
     if st.get('recap'):
         o.append('<div class="recap"><b>30초 복습 — %s</b><br>%s</div>' % (esc(st['recap'][0]), rich(st['recap'][1])))
@@ -394,6 +413,8 @@ def main():
     for c in CHAPTERS:
         if os.path.exists(os.path.join(ROOT, 'content', c[0] + '.py')):
             chs.append(load(c[0]).CH)
+    global ALL
+    ALL = chs
     for i, ch in enumerate(chs):
         prevc = (chs[i - 1]['slug'] + '.html', '%02d %s' % (chs[i - 1]['no'], chs[i - 1]['title'])) if i else ('index.html', '오리엔테이션')
         nextc = (chs[i + 1]['slug'] + '.html', '%02d %s' % (chs[i + 1]['no'], chs[i + 1]['title'])) if i + 1 < len(chs) else ('practice/index.html', '마지막 장 · 실전 연습장')

@@ -99,6 +99,9 @@ function init(){
   Cast.fill();CoverBg();Gloss();Quiz(P.quiz);Prog();
   $$('[data-w]').forEach(function(el){var f=(window.W||{})[el.dataset.w];if(f){var o={};try{o=JSON.parse(el.dataset.o||'{}');}catch(err){}try{f(el,o);}catch(err){el.textContent='그림을 그리지 못했어요: '+err.message;if(window.console)console.error(err);}}});
   Duel(P.duel);
+  function openFor(h){if(!h||h.length<2)return;var e=null;try{e=D.querySelector(h);}catch(err){}if(!e)return;var d=e.closest('details');if(d&&!d.open){d.open=true;setTimeout(function(){e.scrollIntoView();},0);}}
+  openFor(location.hash);addEventListener('hashchange',function(){openFor(location.hash);});
+  D.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href^="#"]');if(a)openFor(a.getAttribute('href'));});
 }
 if(D.readyState==='loading')D.addEventListener('DOMContentLoaded',init);else init();
 })();

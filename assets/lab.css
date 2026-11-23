@@ -206,3 +206,17 @@ footer .nextprev a{background:var(--panel);border:1px solid var(--rule);border-r
 .talkbox{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin-top:10px}
 @media (max-width:760px){.talkbox{grid-template-columns:1fr}}
 .missions li{margin:.4em 0}
+.deepbox{border:2px dashed var(--stain);border-radius:12px;padding:10px 14px;margin:24px 0;background:var(--stain-soft)}
+.deepbox[open]{background:#fff}
+.deepbox > summary{color:var(--stain);font-size:17px;line-height:1.6}
+.deepbox section.level{border-top:none;padding-top:24px}
+.deepbox section.level > .wrap{padding:0}
+.nick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.nick > div{background:var(--amber-soft);border:1px solid #f0d9ae;border-radius:10px;padding:8px 12px}
+.nick b{display:block;font-size:16px;color:var(--amber)}
+.nick span{display:block;font-size:13px;color:var(--muted);line-height:1.45}
+.nick .role{font-size:12px}
+@media (max-width:860px){.nick{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.nick{grid-template-columns:1fr}}
+.track{display:inline-block;font-size:12px;border-radius:999px;padding:0 8px;margin-left:4px}
+.track.basic{background:var(--gfp-soft);color:var(--gfp)}.track.adv{background:var(--stain-soft);color:var(--stain)}
