@@ -195,6 +195,9 @@ STARS = {1: '★☆☆ (입문)', 2: '★★☆ (보통)', 3: '★★★ (도전
 DEEP = {(6, 3), (8, 3), (9, 3), (11, 3), (12, 3), (13, 3)}
 BASIC = [1, 2, 3, 4, 5, 6, 7, 10, 15]
 from nicks import NICK
+from infog import INFOG
+sys.path.insert(0, os.path.join(ROOT, 'tools'))
+from diagrams import DIA
 
 
 def chapter(ch, prevc, nextc):
@@ -231,7 +234,7 @@ def chapter(ch, prevc, nextc):
 <li><b>무엇을:</b> {rich(ch['three'][0])}</li><li><b>왜 중요한가:</b> {rich(ch['three'][1])}</li><li><b>생활·현장에서는:</b> {rich(ch['three'][2])}</li></ol>
 <p class="note">행렬·벡터, 복잡한 공식을 몰라도 됩니다. 그림을 움직여 보고, 밑줄 친 말을 누르면 뜻이 나옵니다.</p>
 {('<details><summary>영어 기호·약어 풀이 (펼치기)</summary><ul>'+ab+'</ul></details>') if ab else ''}
-</div></div>''')
+</div>{infog_html(ch)}</div>''')
     # 등장인물
     castl = ''.join('<div>%s<div><span class="role">%s</span><b>%s</b><span>%s</span></div></div>' % (
         img(w, PEOPLE[w][2], cls=''), esc(PEOPLE[w][1]), esc(PEOPLE[w][0]), esc(ch.get('castnote', {}).get(w, PEOPLE[w][3]))) for w in
@@ -292,6 +295,7 @@ def chapter(ch, prevc, nextc):
     rows = ''.join('<tr><td><b>%s</b></td><td>%s</td><td>%s</td><td>%s</td></tr>' % (rich(a), rich(b), rich(c), rich(e)) for a, b, c, e in ch['sum'])
     chain = ' → '.join('<span class="tag nn">%s</span>' % esc(s['kg']['ko']) for s in stg)
     o.append(f'''<section class="level" id="sum"><div class="wrap"><h2>정리 — 개념정리 한눈에</h2>
+{flow_html(ch, prevc, nextc)}
 <p>개념정리 흐름: {chain}</p>
 <div class="tw"><table class="tb"><thead><tr><th>개념</th><th>한 줄 뜻</th><th>일상 비유</th><th>비유의 한계</th></tr></thead><tbody>{rows}</tbody></table></div>
 </div></section>''')
@@ -323,6 +327,32 @@ def chapter(ch, prevc, nextc):
     o.append(jscript('page-meta', meta))
     o.append(foot_scripts())
     return '\n'.join(o)
+
+
+def infog_html(ch):
+    d = INFOG.get(ch['no'])
+    if not d:
+        return ''
+    cards = ''.join('<div class="ic"><b class="n">%d</b><div><b>%s</b><p>%s</p></div></div>' % (i + 1, esc(h), rich(t)) for i, (h, t) in enumerate(d['cards']))
+    return ('<figure class="infog" id="infog"><div class="ihead"><span>한눈에 보기 · 원자료 인포그래픽 한국어판</span><b>%s</b></div>'
+            '<div class="ibody"><div class="icards">%s</div><div class="idia">%s<figcaption>%s</figcaption></div></div>'
+            '<p class="note">원자료(영어) 그림 %02d번을 한국어로 다시 그렸어요. 원자료에서 바로잡은 곳은 이 그림에 이미 반영했어요.</p></figure>') % (
+        esc(d['title']), cards, DIA[d['dia']](), esc(d['cap']), d['src'])
+
+
+def flow_html(ch, prevc, nextc):
+    nk = {a: b for a, b, c in NICK.get(ch['no'], [])}
+    items = []
+    for i, st in enumerate(ch['stages'], 1):
+        k = st['kg']
+        deep = (ch['no'], i) in DEEP
+        items.append('<div class="fs%s"><small>%d단계%s</small><b>%s</b><span>%s</span></div>' % (
+            ' deep' if deep else '', i, ' · 심화' if deep else '', esc(k['ko']), esc(st['pair'][2] if len(st['pair']) > 2 else '')))
+    pv = '<div class="fe"><small>앞에서</small><span>%s</span></div>' % rich(ch['map'][0])
+    nx = '<div class="fe"><small>다음에 쓰는 곳</small><span>%s</span></div>' % rich(ch['map'][2])
+    arrow = '<i aria-hidden="true">→</i>'
+    return ('<figure class="flowmap"><div class="ihead"><span>한 장 정리 그림</span><b>%s — 개념이 이어지는 길</b></div><div class="frow">%s</div>'
+            '<figcaption>%s</figcaption></figure>') % (esc(ch['title'].split(' — ')[0]), arrow.join([pv] + items + [nx]), rich(ch['stages'][-1]['interp'] if not (ch['no'], len(ch['stages'])) in DEEP else ch['stages'][0]['interp']))
 
 
 def nick_html(n):

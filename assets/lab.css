@@ -220,3 +220,27 @@ footer .nextprev a{background:var(--panel);border:1px solid var(--rule);border-r
 @media (max-width:460px){.nick{grid-template-columns:1fr}}
 .track{display:inline-block;font-size:12px;border-radius:999px;padding:0 8px;margin-left:4px}
 .track.basic{background:var(--gfp-soft);color:var(--gfp)}.track.adv{background:var(--stain-soft);color:var(--stain)}
+/* 한눈에 보기 인포그래픽 · 한 장 정리 그림 */
+.infog,.flowmap{margin:22px 0;border:2px solid var(--text);border-radius:12px;padding:14px 16px;background-color:#fbfcfd;background-image:linear-gradient(rgba(47,111,143,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(47,111,143,.06) 1px,transparent 1px);background-size:20px 20px}
+.ihead{display:flex;flex-direction:column;border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:12px}
+.ihead span{font-size:12px;color:var(--accent);font-weight:700}
+.ihead b{font-size:clamp(18px,2.2vw,22px)}
+.ibody{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;align-items:center}
+@media (max-width:760px){.ibody{grid-template-columns:1fr}}
+.icards{display:flex;flex-direction:column;gap:10px}
+.ic{display:flex;gap:10px;background:#fff;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:8px;padding:8px 12px}
+.ic b.n{flex:none;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px}
+.ic p{margin:.1em 0 0;font-size:15px;line-height:1.65}
+.idia{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:8px;text-align:center}
+.idia figcaption,.flowmap figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+.frow{display:flex;align-items:stretch;gap:6px;flex-wrap:wrap}
+.frow > div{flex:1 1 150px;background:#fff;border:1px solid var(--rule);border-radius:8px;padding:8px 10px;min-width:0}
+.frow > div small{display:block;font-size:11px;color:var(--muted)}
+.frow > div b{display:block;font-size:15px;line-height:1.4;color:var(--stain)}
+.frow > div span{display:block;font-size:13px;color:var(--muted);line-height:1.45}
+.frow > div.fe{background:var(--panel2)}
+.frow > div.fe span{color:var(--text)}
+.frow > div.deep{border-style:dashed;border-color:var(--stain)}
+.frow > i{align-self:center;font-style:normal;color:var(--accent);font-weight:700}
+@media (max-width:760px){.frow{flex-direction:column}.frow > i{transform:rotate(90deg);align-self:center}}
+@media (max-width:760px){.frow > div{flex:none}}

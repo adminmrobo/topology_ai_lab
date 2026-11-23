@@ -712,6 +712,366 @@
    ],
    "status": "ok",
    "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "scene_01_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_01_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_01_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_01_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_02_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_02_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_02_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_02_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_03_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_03_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_03_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_03_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_04_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_04_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_04_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_04_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_05_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_05_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_05_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_05_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_06_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_06_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_06_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_06_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_07_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_07_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_07_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_07_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_08_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_08_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_08_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_08_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_09_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_09_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_09_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_09_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_10_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_10_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_10_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_10_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_11_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_11_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_11_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_11_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_12_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_12_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_12_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_12_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_13_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_13_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_13_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_13_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_14_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_14_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_14_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_14_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_15_lv1",
+   "role": "scene",
+   "path": "img/scene/scene_15_lv1.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
+  },
+  {
+   "id": "scene_15_lv2",
+   "role": "scene",
+   "path": "img/scene/scene_15_lv2.webp",
+   "size": [
+    1200,
+    800
+   ],
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "note": "비유 장면 그림 — docs/IMG_specs.md 6장"
   }
  ]
 }
