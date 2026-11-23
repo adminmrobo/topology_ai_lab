@@ -1,0 +1,717 @@
+{
+ "series_ko": "위상수학 교실 — 고무찰흙 세상의 수학",
+ "title_ko": "위상수학 교실",
+ "site_title": "위상수학 교실 · 중학생도 따라오는 위상수학 15장 + 실전 연습장",
+ "site_url": "https://adminmrobo.github.io/topology_ai_lab/",
+ "updated": "2026-11-23",
+ "ontology": {
+  "pages": [
+   {
+    "path": "01_open_sets.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "02_discrete_indiscrete.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "03_connectedness.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "04_compactness.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "05_digital_topology.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "06_alexandroff_posets.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "07_group_actions.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "08_proper_actions.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "09_tiles_lattices.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "10_covering_spaces.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "11_galois_correspondence.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "12_functors_adjunction.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "13_ultrafilters_stone_cech.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "14_extremal_profinite.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "15_final_review.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "index.html",
+    "kg": false,
+    "export": false
+   }
+  ],
+  "files": []
+ },
+ "i18n": {
+  "langs": [
+   "ko"
+  ],
+  "pages": {
+   "ko": 17
+  },
+  "readme_langs": [
+   "ko"
+  ]
+ },
+ "languages": [
+  "ko"
+ ],
+ "items": [
+  {
+   "id": "cover_00",
+   "role": "cover",
+   "path": "index.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "note": "대체 표지(CSS·캔버스) 사용 중, docs/IMG_specs.md cover_00"
+  },
+  {
+   "id": "cover_01",
+   "role": "cover",
+   "path": "01_open_sets.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "asst"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_01",
+   "role": "og",
+   "path": "img/og/og_01.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_01"
+  },
+  {
+   "id": "cover_02",
+   "role": "cover",
+   "path": "02_discrete_indiscrete.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "sia"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_02",
+   "role": "og",
+   "path": "img/og/og_02.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_02"
+  },
+  {
+   "id": "cover_03",
+   "role": "cover",
+   "path": "03_connectedness.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x1"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_03",
+   "role": "og",
+   "path": "img/og/og_03.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_03"
+  },
+  {
+   "id": "cover_04",
+   "role": "cover",
+   "path": "04_compactness.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "robo"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_04",
+   "role": "og",
+   "path": "img/og/og_04.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_04"
+  },
+  {
+   "id": "cover_05",
+   "role": "cover",
+   "path": "05_digital_topology.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_05",
+   "role": "og",
+   "path": "img/og/og_05.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_05"
+  },
+  {
+   "id": "cover_06",
+   "role": "cover",
+   "path": "06_alexandroff_posets.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_06",
+   "role": "og",
+   "path": "img/og/og_06.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_06"
+  },
+  {
+   "id": "cover_07",
+   "role": "cover",
+   "path": "07_group_actions.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x2"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_07",
+   "role": "og",
+   "path": "img/og/og_07.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_07"
+  },
+  {
+   "id": "cover_08",
+   "role": "cover",
+   "path": "08_proper_actions.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x1"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_08",
+   "role": "og",
+   "path": "img/og/og_08.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_08"
+  },
+  {
+   "id": "cover_09",
+   "role": "cover",
+   "path": "09_tiles_lattices.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "sia"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_09",
+   "role": "og",
+   "path": "img/og/og_09.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_09"
+  },
+  {
+   "id": "cover_10",
+   "role": "cover",
+   "path": "10_covering_spaces.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "sia"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_10",
+   "role": "og",
+   "path": "img/og/og_10.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_10"
+  },
+  {
+   "id": "cover_11",
+   "role": "cover",
+   "path": "11_galois_correspondence.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x3"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_11",
+   "role": "og",
+   "path": "img/og/og_11.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_11"
+  },
+  {
+   "id": "cover_12",
+   "role": "cover",
+   "path": "12_functors_adjunction.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "x2"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_12",
+   "role": "og",
+   "path": "img/og/og_12.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_12"
+  },
+  {
+   "id": "cover_13",
+   "role": "cover",
+   "path": "13_ultrafilters_stone_cech.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "moa"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_13",
+   "role": "og",
+   "path": "img/og/og_13.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_13"
+  },
+  {
+   "id": "cover_14",
+   "role": "cover",
+   "path": "14_extremal_profinite.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "asst"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_14",
+   "role": "og",
+   "path": "img/og/og_14.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_14"
+  },
+  {
+   "id": "cover_15",
+   "role": "cover",
+   "path": "15_final_review.html#top",
+   "status": "missing",
+   "robot": "jupanbot-v2",
+   "characters": [
+    "doc",
+    "fly",
+    "jupanbot",
+    "sia"
+   ],
+   "note": "대체 표지 사용 중"
+  },
+  {
+   "id": "og_15",
+   "role": "og",
+   "path": "img/og/og_15.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "status": "ok",
+   "source_of": "cover_15"
+  },
+  {
+   "id": "src01",
+   "role": "source",
+   "path": "img/source/src01.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src02",
+   "role": "source",
+   "path": "img/source/src02.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src03",
+   "role": "source",
+   "path": "img/source/src03.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src04",
+   "role": "source",
+   "path": "img/source/src04.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src05",
+   "role": "source",
+   "path": "img/source/src05.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src06",
+   "role": "source",
+   "path": "img/source/src06.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src07",
+   "role": "source",
+   "path": "img/source/src07.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src08",
+   "role": "source",
+   "path": "img/source/src08.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src09",
+   "role": "source",
+   "path": "img/source/src09.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src10",
+   "role": "source",
+   "path": "img/source/src10.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src11",
+   "role": "source",
+   "path": "img/source/src11.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src12",
+   "role": "source",
+   "path": "img/source/src12.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src13",
+   "role": "source",
+   "path": "img/source/src13.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src14",
+   "role": "source",
+   "path": "img/source/src14.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src15",
+   "role": "source",
+   "path": "img/source/src15.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src16",
+   "role": "source",
+   "path": "img/source/src16.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src17",
+   "role": "source",
+   "path": "img/source/src17.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src18",
+   "role": "source",
+   "path": "img/source/src18.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src19",
+   "role": "source",
+   "path": "img/source/src19.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  },
+  {
+   "id": "src20",
+   "role": "source",
+   "path": "img/source/src20.webp",
+   "size": [
+    1280,
+    714
+   ],
+   "status": "ok",
+   "note": "사용자 제공 원자료 인포그래픽"
+  }
+ ]
+}
